@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AreaofShapeController;
+use App\Http\Controllers\SingupController;
 use App\Http\Controllers\XinchaoController;
 use App\Http\UserController\UserController;
 use Illuminate\Support\Facades\Route;
@@ -16,6 +17,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+//27/4/2023
+Route::get('/',function(){
+    return view('welcome');
+});
+
+
+ Route::get('/ac', [App\Http\Controllers\PageController::class, 'getIndex']);
+//  Route::get('/ac', [App\Http\Controllers\PageController::class, 'loai_sanpham']);
+//22/4/2023
+
+// Route::get('/form', [SingupController::class, 'index']);
+// Route::post('/form', [SingupController::class, 'displayInFor']);
+
 // Route::get('/',function(){
 
 // })
@@ -28,8 +43,12 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', [XinchaoController::class, 'Hello']);
 // 
 
-Route::get('/computeArea', [AreaofShapeController::class, 'computeArea']);
-Route::post('/computeArea', [AreaofShapeController::class, 'computeArea']);
+// Route::get('/computeArea', [AreaofShapeController::class, 'computeArea']);
+// Route::post('/computeArea', [AreaofShapeController::class, 'computeArea']);
+
+// Route::get('/sum', [XinchaoController::class, 'Hello']);
+// Route::post('/sum', [XinchaoController::class, 'Hello']);
+
 // Route::get('/',function(){
 //     // $html='<h1>Học lập trình Laravel</h1>';
 //     // return 'Home page';

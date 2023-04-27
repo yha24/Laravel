@@ -25,4 +25,6 @@ class XinchaoController extends Controller
         $sum = $request ->soA +  $request ->soB;
         return view('sum',compact('sum'));
     }
+
+    
 }
