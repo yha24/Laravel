@@ -24,7 +24,7 @@ Route::get('/',function(){
 });
 
 
- Route::get('/ha', [App\Http\Controllers\PageController::class, 'getIndex']);
+ Route::get('/', [App\Http\Controllers\PageController::class, 'getIndex']);
 //  Route::get('/ac', [App\Http\Controllers\PageController::class, 'loai_sanpham']);
 
 use Illuminate\Support\Facades\Schema;
