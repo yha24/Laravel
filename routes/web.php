@@ -26,6 +26,15 @@ Route::get('/',function(){
 
  Route::get('/ac', [App\Http\Controllers\PageController::class, 'getIndex']);
 //  Route::get('/ac', [App\Http\Controllers\PageController::class, 'loai_sanpham']);
+
+use Illuminate\Support\Facades\Schema;
+Route::get('database',function(){
+    Schema::create('loaisanpham',function($table){
+        $table->increments('id');
+        $table->string('ten',200);
+    });
+    echo"Đã thực hiện lệnh tạo bảng thành công";
+});
 //22/4/2023
 
 // Route::get('/form', [SingupController::class, 'index']);

@@ -2,12 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\product;
 use Illuminate\Http\Request;
+use App\Models\slide;
 
 class PageController extends Controller
 {
+    
     public function getIndex(){
-        return view('page.trangchu');
+        $slide= slide::all();
+
+        //return view('page.trangchu',['slide'=>$slide]);
+        $new_product = product::where('new',1)->get();
+        $new_product_array= $new_product->toArray();
+        return view('page.trangchu',compact('slide','new_product_array'));
     }
 
     public function getLoaiSP(){
