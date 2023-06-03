@@ -34,8 +34,11 @@ class PageController extends Controller
         return view('page.trangchu',compact('slide','new_product_array'));
 
     }
+<?php
 
-public function getLoaiSP(){
-return view('page.loai_sanpham');
+    
+    public function getLoaiSP(){
+        return view('page.loai_sanpham');
+    }
 }
-}
+?>

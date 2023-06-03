@@ -97,12 +97,14 @@
                         <div class="row">{{$new_product->links()}}</div>
 
                     </div> <!-- .beta-products-list -->
+
+
+
                     <div class="beta-products-list">
-                        <h4>Top Products</h4>
+                        <h4>Top Products- San pham khuyen mai</h4>
                         <div class="beta-products-details">
                             <p class="pull-left">Tim thay
-                                {{count($sanpham_khuyenmai)}} san pham
-                            </p>
+                                {{count($sanpham_khuyenmai)}} san pham</p>
                             <div class="clearfix"></div>
                         </div>
                         <div class="row">

@@ -29,13 +29,14 @@ class PageController extends Controller
 
 
         //return view('page.trangchu',['slide'=>$slide]);
-        $new_product = products::where('new',1)->get();
+        $new_product = product::where('new',1)->get();
         $new_product_array= $new_product->toArray();
         return view('page.trangchu',compact('slide','new_product_array'));
 
     }
 
-public function getLoaiSP(){
-return view('page.loai_sanpham');
-}
+    
+    public function getLoaiSP(){
+        return view('page.loai_sanpham');
+    }
 }

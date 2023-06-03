@@ -39,3 +39,4 @@ public function getLoaiSP(){
 return view('page.loai_sanpham');
 }
 }
+?>

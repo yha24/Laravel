@@ -98,7 +98,7 @@
 
                     </div> <!-- .beta-products-list -->
                     <div class="beta-products-list">
-                        <h4>Top Products</h4>
+                        <h4>Top Products- San pham khuyen mai</h4>
                         <div class="beta-products-details">
                             <p class="pull-left">Tim thay
                                 {{count($sanpham_khuyenmai)}} san pham

@@ -8,13 +8,18 @@ use App\Models\products;
 use Illuminate\Http\Request;
 use App\Models\slide;
 use Illuminate\Contracts\View\View;
+=======
+use App\Models\product;
+use Illuminate\Http\Request;
+use App\Models\slide;
+>>>>>>> 5b077656c404bbc4ad19430db6fe8c9b7dbf8c89
 
 class PageController extends Controller
 {
     
     public function getIndex(){
         $slide= slide::all();
-
+<<<<<<< HEAD
         $new_product = products::where('new',1)->paginate(8);
         $sanpham_khuyenmai =products::where('promotion_price','<>',0)->paginate(4)	;				
         //dd($new_product);	
@@ -26,16 +31,17 @@ class PageController extends Controller
       $splienquan= products:: where('id','<>', $sanpham->id,'and','id_type','=',$sanpham->id_type,)->paginate(3);
       $comments= comment:: where('id_products', compact('sanpham','splienquan','comments'));
       return view('page.chitiet_sanpham',compact('sanpham','splienquan','comments'));
-
+=======
 
         //return view('page.trangchu',['slide'=>$slide]);
-        $new_product = products::where('new',1)->get();
+        $new_product = product::where('new',1)->get();
         $new_product_array= $new_product->toArray();
         return view('page.trangchu',compact('slide','new_product_array'));
-
+>>>>>>> 5b077656c404bbc4ad19430db6fe8c9b7dbf8c89
     }
 
-public function getLoaiSP(){
-return view('page.loai_sanpham');
-}
+    
+    public function getLoaiSP(){
+        return view('page.loai_sanpham');
+    }
 }

@@ -15,6 +15,12 @@
 	<link rel="stylesheet" title="style" href="source/assets/dest/css/style.css">
 	<link rel="stylesheet" href="source/assets/dest/css/animate.css">
 	<link rel="stylesheet" title="style" href="source/assets/dest/css/huong-style.css">
+	<style>
+		.images_item {
+			width: 250px;
+			height: 150px;
+		}
+	</style>
 </head>
 <body>
 @include('header')

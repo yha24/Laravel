@@ -35,7 +35,8 @@ class PageController extends Controller
 
     }
 
-public function getLoaiSP(){
-return view('page.loai_sanpham');
-}
-}
+    
+    public function getLoaiSP(){
+        return view('page.loai_sanpham');
+    }
+}?
