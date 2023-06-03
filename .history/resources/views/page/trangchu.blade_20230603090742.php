@@ -137,6 +137,7 @@
                                 </div>
                             </div>
                             @endforeach
+
                     </div>
                     <div class="row">{{$sanpham_khuyenmai->links()}}
                     </div>

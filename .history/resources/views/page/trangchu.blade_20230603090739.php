@@ -136,7 +136,7 @@
                                     </div>
                                 </div>
                             </div>
-                            @endforeach
+                            @endforea
                     </div>
                     <div class="row">{{$sanpham_khuyenmai->links()}}
                     </div>

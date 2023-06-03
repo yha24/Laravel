@@ -140,6 +140,7 @@
                     </div>
                     <div class="row">{{$sanpham_khuyenmai->links()}}
                     </div>
+                    php
                 </div> <!-- .beta-products-list -->
             </div>
         </div> <!-- end section with sidebar and main content -->

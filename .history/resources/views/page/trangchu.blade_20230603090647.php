@@ -105,7 +105,7 @@
                             </p>
                             <div class="clearfix"></div>
                         </div>
-                        < class="row">
+                        <div class="row">
                             @foreach($sanpham_khuyenmai as $spkm)
                             <div class="col-sm-3">
                                 <div class="single-item">
@@ -137,14 +137,19 @@
                                 </div>
                             </div>
                             @endforeach
-                    </div>
-                    <div class="row">{{$sanpham_khuyenmai->links()}}
-                    </div>
-                </div> <!-- .beta-products-list -->
-            </div>
-        </div> <!-- end section with sidebar and main content -->
+                        </div>
 
 
-    </div> <!-- .main-content -->
-</div> <!-- #content -->
-@endsection
+
+
+
+                        <div class="row">{{$sanpham_khuyenmai->links()}}
+                        </div>
+                    </div> <!-- .beta-products-list -->
+                </div>
+            </div> <!-- end section with sidebar and main content -->
+
+
+        </div> <!-- .main-content -->
+    </div> <!-- #content -->
+    @endsection
